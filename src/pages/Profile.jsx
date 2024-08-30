@@ -48,7 +48,6 @@ const ProfilePage = () => {
                                 </div>
 
                                 <div className="mt-8 flex justify-center space-x-4">
-                                    {/* Add any additional buttons or content here */}
                                 </div>
                             </div>
                         </div>

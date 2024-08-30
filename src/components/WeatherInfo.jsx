@@ -13,12 +13,12 @@ const WeatherInfoCard = ({ title, children }) => (
 );
 
 const WeatherInfo = ({data}) => {
+  const [loading,setLoading]=useState(false)
   const [windSpeedKmh, setWindSpeedKmh] = useState("00");
   const [windGustKmh, setWindGustKmh] = useState("00");
   const [pressureMmHg, setPressureMmHg] = useState("00");
   const [humidity, setHumidity] = useState(0);
-  const[dewPoint,setDewPoint]=useState('00')
-  const [loading, setLoading] = useState(false);
+  const[dewPoint,setDewPoint]=useState('00') 
 
   useEffect(() => {
     setLoading(true)
@@ -38,6 +38,8 @@ const WeatherInfo = ({data}) => {
   }, [data]);
 
   return (
+
+    // weather info 
         <div className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg p-6 rounded-xl max-w-4xl mx-auto shadow-lg ">
       <div className="flex flex-col md:flex-row gap-6 ml-8 md:ml-1"> 
         <WeatherInfoCard title="Wind">

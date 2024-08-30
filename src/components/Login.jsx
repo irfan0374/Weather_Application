@@ -32,13 +32,13 @@ export const LoginPage = () => {
         try {
             setLoading(true)
             const res = await login(auth, values.email, values.password)
-            console.log(res, "response frontEnd")
+
             if (res) {
                 dispatch(userLogout());
                 localStorage.setItem("token", res.accessToken);
                 dispatch(userLogin({
-                    user: res.uid, 
-                    token: res.accessToken 
+                    user: res.uid,
+                    token: res.accessToken
                 }));
                 toaster.push(<Message type="success">Login Successfully</Message>, {
                     placement: 'topEnd',
@@ -53,7 +53,7 @@ export const LoginPage = () => {
                 placement: 'topEnd',
                 duration: 3000
             });
-        }   
+        }
     }
     return (
         <>
@@ -63,10 +63,11 @@ export const LoginPage = () => {
                         <div
                             className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center"
                             style={{
-                                backgroundImage: "url(/public/LoginImage.JPEG)",
+                                backgroundImage: "url('https://res.cloudinary.com/dlcnf8yfh/image/upload/v1724994130/Snowy_Silence_ccno0t.jpg')",
                             }}
                         >
                         </div>
+                        
                         <div className="w-full lg-w-1/2 py-16 px-12">
 
                             <h2 className="text-3xl mb-4 text-black font-serif font-semibold ">User Login</h2>

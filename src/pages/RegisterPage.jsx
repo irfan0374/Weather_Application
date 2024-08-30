@@ -29,7 +29,7 @@ export function RegisterPage() {
   ];
 
   return (
-    <Tabs value="Login">
+    <Tabs  className="my-14"value="Login">
       <TabsHeader className="w-96 mx-auto flex justify-center">
         {data.map(({ label, value, icon }) => (
           <Tab
