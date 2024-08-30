@@ -33,6 +33,7 @@ User Profile Page
 
 ## Installation
 
+
 1. **Clone the repository:**
 
    ```bash
@@ -40,8 +41,10 @@ User Profile Page
    npm install
    npm run dev
 
+
+
 **Deployment URL**
-The application is deployed and can be accessed at: [https://your-deployed-url.com](https://weather-application-rouge-nine.vercel.app/)
+The application is deployed and can be accessed at: [(https://weather-application-rouge-nine.vercel.app/)](https://weather-application-rouge-nine.vercel.app/)
 
 
    
