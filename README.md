@@ -1,30 +1,51 @@
-# Weather Dashboard Frontend
+# Weather Dashboard 
 
-This project is the frontend for a weather dashboard application built with React and Vite. It provides an interface for users to register, log in, view weather data, and manage their favorite cities.
+The Weather Dashboard is a web application built with React.js that provides users with an interactive interface to view various weather metrics using different types of charts. The application supports multiple user types (admin and regular users) with authentication and includes additional pages for user settings and profiles.
 
 ## Features
 
-- User registration and login.
-- Search for current, forecast, and historical weather data by city with Google Map search suggestions.
-- Display weather details including temperature, humidity, wind speed, and conditions.
-- Save and display favorite cities.
-- Route protection for authenticated users.
-- Form validation with Yup and Formik.
-- State management with Redux.
-- Styling with Tailwind CSS.
+- Dashboard Overview Page: Displays key weather metrics using different charts:
 
-## Prerequisites
+Bar Chart
+Pie Chart
+Gauge Meter
 
-- React
+-Authentication: Supports login for multiple user types (admin and regular users) using JWT Token authentication.
+
+-Multiple Pages: Apart from the main dashboard, the application includes:
+
+User Profile Page
+
+-API Integration: Utilizes free APIs to fetch weather data.
+
+-Deployment: Deployed on a cloud platform Vercel.
+
+-State Management: Utilizes a state management library Redux for efficient state handling.
+
+**Technologies Used**
+-Frontend: React.js, React Router
+-State Management: Redux
+-Firebase:store user authentication details
+-UI Library: TailwindCSS,materialTailwind
+-Authentication: JSON Web Token (JWT)
+-API: Free weather API OpenWeatherMap
+-Deployment: Vercel
 
 ## Installation
+
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/irfan0374/viScan_weatherApp_frontend.git
-   cd weather-dashboard-frontend
+   git clone https://github.com/irfan0374/viScan_weatherApp_frontend.git](https://github.com/irfan0374/Weather_Application.git
    npm install
    npm run dev
 
+
+
+**Deployment URL**
+The application is deployed and can be accessed at: [(https://weather-application-rouge-nine.vercel.app/)](https://weather-application-rouge-nine.vercel.app/)
+
+
+   
    
